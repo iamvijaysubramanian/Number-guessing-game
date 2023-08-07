@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Number Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Guessing Number Game</h1>
+      <button id="startBtn">Start New Game</button>
+      <div id="gameContainer" style="display: none">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Your name" />
+        <label for="guess"
+          >Enter your guess (four digits with no duplicates):</label
+        >
+        <input type="text" id="guess" placeholder="Your guess" />
+        <button id="submitBtn">Submit Guess</button>
+        <button id="startNewGameBtn" style="display: none">
+          Start New Game
+        </button>
+        <p class="result" id="result"></p>
+        <p class="feedback" id="feedback"></p>
+        <p class="best-score" id="bestScore"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
